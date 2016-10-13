@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" format="dimension"/>
+        <attr name="type">
+            <enum name="circle" value="0"/>
+            <enum name="round" value="1"/>
+        </attr>
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+    <attr name="textColorCustomized" format="color" />
+    <attr name="viewBackgroundCustomized" format="color" />
+    <attr name="layoutBackgroundCustomized" format="color" />
+    <attr name="toolbarBackgroundCustomized" format="color" />
+    <attr name="dividerColorCustomized" format="color" />
+    <attr name="fabColorCustomized" format="color" />
+    <attr name="textColorWhiteCustomized" format="color" />
+    <attr name="navigationBarColorCustomized" format="color" />
+</resources>

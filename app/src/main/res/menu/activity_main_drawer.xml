@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_message"
+            android:title="还在制作呢" />
+        <item
+            android:id="@+id/nav_vedio"
+            android:title="还在制作呢" />
+        <item
+            android:id="@+id/nav_knowledge"
+            android:title="相关说明" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="设置"/>
+    </group>
+
+    <item android:title="还在制作呢">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:title="关于作者" />
+        </menu>
+    </item>
+
+</menu>

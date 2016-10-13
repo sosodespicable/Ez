@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474F">
+    <com.lxj.sample.letsplay.MyViews.NewCustomRing
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custom_angle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_introduce"
+        android:layout_below="@+id/custom_angle"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="↑搭配特殊的麦克风阵列可实现唤醒角度的显示↑"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_aboutApp"
+        android:layout_below="@+id/tv_introduce"
+        android:text="请务必点我看看说明"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_aboutApp"
+        android:paddingTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_wakeup_content"
+            android:text=""/>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_music"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_marginBottom="68dp"
+        >
+        <com.lxj.sample.letsplay.MyViews.CustomImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:id="@+id/music_circleImageView"
+            app:type="circle"
+            app:src="@drawable/little_forest"
+            />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_toRightOf="@+id/music_circleImageView"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center"
+            android:scrollbars="vertical"
+            android:fadingEdge="vertical"
+            android:foregroundGravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:gravity="center"
+                android:id="@+id/tv_musicInfo"
+                android:text=""/>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
